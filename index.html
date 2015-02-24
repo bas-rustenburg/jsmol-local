@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html>
+<meta name="author" content="Bas Rustenburg">
+<title>A simple Jsmol example</title>
+<head>
+<script type="text/javascript" src="JSmol.min.js"></script>
+<script type="text/javascript">
+    var Info = {
+        color: "#E8F4FF",
+        height: 500,
+        width: 500,
+        use: "HTML5"
+    };
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+  jmolApplet0 = Jmol.getApplet("jmolApplet", Info);
+  Jmol.script(jmolApplet,"background white; load molecules/cb7.sdf; spin on;")
+</script>
+<br>
+<a href="javascript:Jmol.script(jmolApplet,'spin on')">spin</a>
+<a href="javascript:Jmol.script(jmolApplet,'spin off')">off</a>
+</body>
